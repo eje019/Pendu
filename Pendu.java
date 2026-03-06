@@ -11,5 +11,9 @@ public class Pendu {
         "ecran", 
         "jeu"
     };
+
+    private String motSecret;
 }
+
+
 
