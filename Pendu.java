@@ -13,6 +13,15 @@ public class Pendu {
     };
 
     private String motSecret;
+
+    private int nbErreurs = 0;
+
+    private String motMasque;
+
+    public Pendu() {
+        
+    }
+
 }
 
 
