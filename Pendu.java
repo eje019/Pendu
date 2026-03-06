@@ -12,15 +12,15 @@ public class Pendu {
         "jeu"
     };
 
-    private String motSecret;
+    public String motSecret;
 
-    private int nbErreurs = 0;
+    public int nbErreurs = 0;
 
-    private String motMasque;
+    public String motMasque;
 
-    private char[] lettresProposees = new char[26];
+    public char[] lettresProposees = new char[26];
 
-    private int nbLettresProposees = 0;
+    public int nbLettresProposees = 0;
 
     public Pendu() {
 
@@ -28,14 +28,19 @@ public class Pendu {
 
     int index = (int)(Math.random() * listeMots.length);
 
-    String MotMasque = "";
-
     motSecret = listeMots[index];
 
-    for (int i = 0; i < motSecret.length() -1 ; i++)
-        motMasque = "_";
+    motMasque="";
+
+    for (int i = 0; i < motSecret.length() ; i++){
+        motMasque += "_";
     }
+
+    nbErreurs = 0;
+    nbLettresProposees = 0;
    
+}
+
 }
 
 
